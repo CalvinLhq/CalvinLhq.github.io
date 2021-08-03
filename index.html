@@ -100,7 +100,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Git-%E5%92%8C-Github/" data-id="ckrwbzd0v0002cbvtg6tadhzj" data-title="Git 和 Github" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Git-%E5%92%8C-Github/" data-id="ckrwdzbnc0004rmvt6qx766rt" data-title="Git 和 Github" class="article-share-link">Share</a>
       
       
       
@@ -139,7 +139,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E7%94%A8-Hexo-%E5%86%99%E5%8D%9A%E5%AE%A2/" data-id="ckrwbzd100006cbvtfw33fv7i" data-title="用 Hexo 写博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E7%94%A8-Hexo-%E5%86%99%E5%8D%9A%E5%AE%A2/" data-id="ckrwdzbne0006rmvt7kpz4r16" data-title="用 Hexo 写博客" class="article-share-link">Share</a>
       
       
       
@@ -178,7 +178,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Docker-%E5%AE%B9%E5%99%A8/" data-id="ckrwbzd0r0001cbvt3oqccmwo" data-title="Docker 容器" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Docker-%E5%AE%B9%E5%99%A8/" data-id="ckrwdzbn60001rmvtah4na06z" data-title="Docker 容器" class="article-share-link">Share</a>
       
       
       
@@ -212,7 +212,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>一个一个说，先讲讲 Vim 编辑器。什么是 Vim 呢？如果你用过 Windows，那你一定用过 Word；如果你用过 Mac，那你一定听说过 Pages；如果你想要学 Linux，那你必须要掌握 Vim。Vim 就是个编辑文本的工具。</p>
+        <p>一个一个说，先讲讲 Vim 编辑器。什么是 Vim 呢？如果你用过 Windows，那你一定用过 Word；如果你用过 Mac，那你一定听说过 Pages；如果你想要学 Linux，那你必须要掌握 Vim。Vim 就是个编辑文本的工具。<br>Tmux 是一个终端复用工具，这里有两个概念需鸟理解，<strong>终端</strong> 以及 <strong>复用</strong>。终端就是我们这黑乎乎的面板啦，我们在终端处输入命令，通过终端与系统交互。但是这样就有一个问题，我们每次只能做一件事情啊。举个例子，我们在使用 yum install 命令安装一个比较大的软件，在安装期间由于无法输入命令，我们就只能干等着。Tmux 使我们可以把一个终端一分为二，二分为三，完美的解决了终端不够用的问题，这就是 <strong>复用</strong>。<br>Tmux 还有一个优势，当我们在 ssh 远程连接服务器时，有时会因为网络连接或其他原因导致 <strong>会话</strong> 中断，用户与计算机的一次临时交互被称为 <strong>会话</strong>。由于窗口与会话和进程是紧密连接在一起的，所以会话的中断也会导致进程的停止。网络波动一下，工作成果全无？！这可不行，所以 Tmux 巧妙地使 <strong>会话</strong> 在我们退出 <strong>窗口</strong> 后持续运行。从此不用担心一不小心退出窗口导致会话中断了。</p>
 <hr>
 <p>使用 Vim 编辑文件    </p>
 <ol>
@@ -222,20 +222,26 @@
 </li>
 <li>开始编辑<ul>
 <li>在开始编辑之前，你需要先了解一下 vim 编辑器的几个模式，我个人常用的有三个。<ul>
-<li>正常模式<br>刚进入文件时，我们就处于正常模式，如果你正处于其他的模式，点击键盘上的 <code>esc</code> 键便可切换至正常模式。在这个模式下你可以：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">移动光标：尝试练习使用 h j k l 键代替方向键</span><br><span class="line">复制文本：使用 yy 复制一整行 yw 复制一个词 y数字w 复制指定数字的字数</span><br><span class="line">粘贴文本：使用 p 粘贴至下行，P 粘贴至上一行</span><br><span class="line">删除文本；使用 x 以删除光标下的字符，使用 dd 以删除光标所在行</span><br><span class="line">光标跳转：使用 gg 使光标移动到文件开头，使用 G 使光标移动到文件末尾</span><br></pre></td></tr></table></figure></li>
+<li>正常模式<br>刚进入文件时，我们就处于正常模式，如果你正处于其他的模式，点击键盘上的 <code>esc</code> 键便可切换至正常模式。在这个模式下你可以：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">移动光标：尝试练习使用 h j k l 键代替方向键</span><br><span class="line">复制文本：使用 yy 复制一整行 yw 复制一个词 y数字w 复制指定数字的字数</span><br><span class="line">粘贴文本：使用 p 粘贴至下行，P 粘贴至上一行</span><br><span class="line">删除文本；使用 x 以删除光标下的字符，使用 dd 以删除光标所在行</span><br><span class="line">光标跳转：使用 gg 使光标移动到文件开头，使用 G 使光标移动到文件末尾</span><br><span class="line">查找文本：输入 / 并在其后输入想要查找的单词，单词会被标黄，并可以使用 n 和 N 在多个单词间转移</span><br><span class="line">撤回操作：输入 u 已撤回上一步操作</span><br></pre></td></tr></table></figure></li>
 <li>输入模式<br>在正常模式下输入 i 即可进入输入模式，这时候正常打字就可以了。</li>
-<li></li>
+<li>命令模式<br>在正常模式下输入 ：即可进入命令模式。在这个模式下你可以：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">设置行号：输入 set nu 可以在文件左侧显示行号，set nonu 即可取消。</span><br><span class="line">替换特定内容：使用 %s/被替换的内容/替换成的内容/g 替换文件中出现的所有关键词；去掉 % 则替换单行；2，12s/被替换的内容/替换成的内容/g 则替换 2 至 12 行</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
 </ul>
 </li>
+<li>完成编辑<br>编辑完成以后进入命令模式，输入 <code>wq</code> 保存退出，如不想保存则输入 <code>q！</code> 退出。</li>
+</ol>
+<hr>
+<p>使用 Tmux 进行会话管理</p>
+<ol>
+<li>什么是 <strong>会话</strong> <strong>窗口</strong> <strong>窗格</strong> </li>
 </ol>
 <p>点此以返回<a href="/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">总览页面</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Vim-%E5%92%8C-Tmux/" data-id="ckrwbzd0x0003cbvtgex0czq9" data-title="Vim 和 Tmux" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Vim-%E5%92%8C-Tmux/" data-id="ckrwdzbn90002rmvt5zgg378o" data-title="Vim 和 Tmux" class="article-share-link">Share</a>
       
       
       
@@ -274,7 +280,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E5%8C%96%E4%B8%8E-OpenStack/" data-id="ckrwbzd110007cbvt7e1m2au6" data-title="虚拟化与 OpenStack" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E5%8C%96%E4%B8%8E-OpenStack/" data-id="ckrwdzbnf0007rmvtggkn2hcj" data-title="虚拟化与 OpenStack" class="article-share-link">Share</a>
       
       
       
@@ -313,7 +319,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" data-id="ckrwbzd120008cbvtgl650p1o" data-title="虚拟机与远程连接" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" data-id="ckrwdzbng0008rmvt9hl8dkto" data-title="虚拟机与远程连接" class="article-share-link">Share</a>
       
       
       
@@ -383,7 +389,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E5%AD%A6%E4%B9%A0-Linux-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" data-id="ckrwbzd0y0004cbvtb0gn5npo" data-title="学习-Linux-基本操作" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E5%AD%A6%E4%B9%A0-Linux-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" data-id="ckrwdzbnb0003rmvt6si8guet" data-title="学习-Linux-基本操作" class="article-share-link">Share</a>
       
       
       
@@ -481,7 +487,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="ckrwbzd0z0005cbvtczzb51hh" data-title="我的第一篇博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="ckrwdzbnd0005rmvt8xxb8heh" data-title="我的第一篇博客" class="article-share-link">Share</a>
       
       
       
