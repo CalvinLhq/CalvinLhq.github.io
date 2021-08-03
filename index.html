@@ -100,7 +100,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Git-%E5%92%8C-Github/" data-id="ckrwehai30002p8vtef11eh6d" data-title="Git 和 Github" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Git-%E5%92%8C-Github/" data-id="ckrwejo610002tyvtfy7cftr5" data-title="Git 和 Github" class="article-share-link">Share</a>
       
       
       
@@ -140,16 +140,16 @@
 <li><p>可以开始安装了：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- 使用 npm install -g hexo-cli 下载安装 hexo </span><br><span class="line"></span><br><span class="line">安装完以后初始化：</span><br><span class="line">- 创建一个空的 blog 目录，cd 到目录下执行 hexo init 进行初始化，稍候片刻会多出来一堆配置文件（_config.yml文件很重要，会经常用到）</span><br><span class="line">- 现在可以在目录下创建文章了</span><br></pre></td></tr></table></figure></li>
 <li><p>创建文章准备发布：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 使用 hexo new 创建第一篇文章,文章默认存放在 blog/source/_posts/ 目录下</span><br><span class="line">- 编辑完以后返回 blog 目录，使用 hexo clean 清理缓存先前的静态文件（不 clean 会产生的后果还有待确认）</span><br><span class="line">- 使用 hexo generate 去生成新的静态文件</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- 使用 hexo new 创建第一篇文章,文章默认存放在 blog/source/_posts/ 目录下</span><br><span class="line">- 编辑完以后返回 blog 目录，使用 hexo clean 清理缓存先前的静态文件（不 clean 会产生的后果还有待确认）</span><br><span class="line">- 使用 hexo generate 去生成新的静态文件</span><br></pre></td></tr></table></figure></li>
 <li><p>准备 pages 环境：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">- 在 GitHub 上新建 repository 并命名为 用户名.github.io</span><br><span class="line"></span><br><span class="line">在 Linux 环境创建的 blog 目录下 安装 git 部署插件：</span><br><span class="line">- 使用 npm install --save hexo-deployer-git</span><br><span class="line"></span><br><span class="line">安装完以后在 blog 目录下的 _config.yml 中进行以下配置：</span><br><span class="line">###</span><br><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repo: https://github.com/CalvinLhq/CalvinLhq.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">###</span><br><span class="line"></span><br><span class="line">配置完成以后就可以使用 hexo d 将其部署到 GitHub 上了，然后 pages 就会自动帮你把文章部署到与 repository 名相同的网址中了。</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">- 在 GitHub 上新建 repository 并命名为 用户名.github.io</span><br><span class="line"></span><br><span class="line">在 Linux 环境创建的 blog 目录下 安装 git 部署插件：</span><br><span class="line">- 使用 npm install --save hexo-deployer-git</span><br><span class="line"></span><br><span class="line">安装完以后在 blog 目录下的 _config.yml 中进行以下配置：</span><br><span class="line">###</span><br><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repo: https://github.com/用户名/用户名.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">###</span><br><span class="line"></span><br><span class="line">配置完成以后就可以使用 hexo d 将其部署到 GitHub 上了，然后 pages 就会自动帮你把文章部署到与 repository 名相同的网址中了。</span><br></pre></td></tr></table></figure></li>
 </ol>
 <p>点此以返回<a href="/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">总览页面</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E7%94%A8-Hexo-%E5%86%99%E5%8D%9A%E5%AE%A2/" data-id="ckrwehai80006p8vta5mg4unc" data-title="用 Hexo 写博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E7%94%A8-Hexo-%E5%86%99%E5%8D%9A%E5%AE%A2/" data-id="ckrwejo650006tyvtfgafgj00" data-title="用 Hexo 写博客" class="article-share-link">Share</a>
       
       
       
@@ -188,7 +188,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Docker-%E5%AE%B9%E5%99%A8/" data-id="ckrwehai00001p8vteyha7rmo" data-title="Docker 容器" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Docker-%E5%AE%B9%E5%99%A8/" data-id="ckrwejo5y0001tyvtglryh5ys" data-title="Docker 容器" class="article-share-link">Share</a>
       
       
       
@@ -251,7 +251,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Vim-%E5%92%8C-Tmux/" data-id="ckrwehai50003p8vteq1s618b" data-title="Vim 和 Tmux" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Vim-%E5%92%8C-Tmux/" data-id="ckrwejo620003tyvtdxhc30g8" data-title="Vim 和 Tmux" class="article-share-link">Share</a>
       
       
       
@@ -290,7 +290,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E5%8C%96%E4%B8%8E-OpenStack/" data-id="ckrwehai90007p8vtaf54gm03" data-title="虚拟化与 OpenStack" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E5%8C%96%E4%B8%8E-OpenStack/" data-id="ckrwejo660007tyvtd5elchkj" data-title="虚拟化与 OpenStack" class="article-share-link">Share</a>
       
       
       
@@ -329,7 +329,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" data-id="ckrwehaia0008p8vt5qxp02ad" data-title="虚拟机与远程连接" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" data-id="ckrwejo670008tyvtf8mabw3x" data-title="虚拟机与远程连接" class="article-share-link">Share</a>
       
       
       
@@ -399,7 +399,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E5%AD%A6%E4%B9%A0-Linux-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" data-id="ckrwehai60004p8vt7gng2p0v" data-title="学习-Linux-基本操作" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E5%AD%A6%E4%B9%A0-Linux-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" data-id="ckrwejo630004tyvthznbbqxx" data-title="学习-Linux-基本操作" class="article-share-link">Share</a>
       
       
       
@@ -497,7 +497,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="ckrwehai70005p8vtdsu29tuj" data-title="我的第一篇博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="ckrwejo640005tyvtdschbevu" data-title="我的第一篇博客" class="article-share-link">Share</a>
       
       
       
