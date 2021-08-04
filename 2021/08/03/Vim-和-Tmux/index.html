@@ -14,7 +14,7 @@
 <meta property="og:description" content="一个一个说，先讲讲 Vim 编辑器。什么是 Vim 呢？如果你用过 Windows，那你一定用过 Word；如果你用过 Mac，那你一定听说过 Pages；如果你想要学 Linux，那你必须要掌握 Vim。Vim 就是个编辑文本的工具。Tmux 是一个终端复用工具，这里有两个概念需鸟理解，终端 以及 复用。终端就是我们这黑乎乎的面板啦，我们在终端处输入命令，通过终端与系统交互。但是这样就有一个问题">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-08-02T17:36:48.000Z">
-<meta property="article:modified_time" content="2021-08-04T06:32:20.964Z">
+<meta property="article:modified_time" content="2021-08-04T06:44:36.823Z">
 <meta property="article:author" content="Calvin 李汉祺">
 <meta name="twitter:card" content="summary">
   
@@ -115,36 +115,39 @@
 <li>完成编辑<br>编辑完成以后进入命令模式，输入 <code>wq</code> 保存退出，如不想保存则输入 <code>q！</code> 退出。</li>
 </ol>
 <hr>
-<p>使用 Tmux 进行会话管理</p>
+<p>使用 Tmux 进行会话管理<br>使用 Tmux 进行会话管理  </p>
 <ol>
-<li>管理 <strong>会话</strong>，<strong>窗口</strong>，<strong>窗格</strong> <ul>
-<li>用户可以创建新的会话，以在服务器上开始一个新的进程。使用以下命令开启新的会话：<pre><code>tmux new -s &quot;为创建的会话命名&quot;
-</code></pre>
-创建完成以后，你会直接进入 Tmux 创建的会话界面，此时你面前的就是创建的第一个会话窗口，窗口的下方会有绿色的信息框，左侧写有会话名。<br>想要退出会话有两种方式，一种是完全彻底的退出会话，将近程终止：</li>
-</ul>
-</li>
+<li>管理 <strong>会话</strong>， <strong>窗口</strong>， <strong>窗格</strong>  </li>
 </ol>
-<p>如果在 tmux 创建的会话之内，可以直接输入 exit，或者使用快捷键 ctrl d<br>如果在 tmux 创建的会话之外，可以先通过 tmux ls 查看所有创建的会话，再通过 tmux kill-session “想要删除的会话名” 进行删除</p>
+<ul>
+<li>用户可以创建新的会话，以在服务器上开始一个新的进程。使用以下命令开启新的会话：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux new -s &quot;为创建的会话命名&quot;</span><br></pre></td></tr></table></figure>
+<p>创建完成以后，你会直接进入 Tmux 创建的会话界面，此时你面前的就是创建的第一个会话窗口，窗口的下方会有绿色的信息框，左侧写有会话名。<br>想要退出会话有两种方式，一种是完全彻底的退出会话，将近程终止：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如果在 tmux 创建的会话之内，可以直接输入 exit，或者使用快捷键 ctrl d</span><br><span class="line">如果在 tmux 创建的会话之外，可以先通过 tmux ls 查看所有创建的会话，再通过 tmux kill-session &quot;想要删除的会话名&quot; 进行删除</span><br></pre></td></tr></table></figure>
 <p>另外一种方法为暂时退出会话，但进程仍在后台进行，随时可以重新接入会话开始工作。可用以下命令完成：</p>
-<p>tmux detach<br>或使用快捷键<br>ctrl b + d</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tmux detach</span><br><span class="line">或使用快捷键</span><br><span class="line">ctrl b + d</span><br></pre></td></tr></table></figure>
 <p>想要重新进入会话则可以使用：</p>
-<p>tmux attach -t “想进入的会话名”</p>
-<pre><code>- 在 **会话** 内可以创建多个窗口，在相应会话中任意窗口内输入以下命令即可创建新窗口：
-</code></pre>
-<p>tmux new-window -n “为创建的窗口命名”</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux attach -t &quot;想进入的会话名&quot;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>在 <strong>会话</strong> 内可以创建多个窗口，在相应会话中任意窗口内输入以下命令即可创建新窗口：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux new-window -n &quot;为创建的窗口命名&quot;</span><br></pre></td></tr></table></figure>
 <p>创建完后，在会话内一般使用一下快捷键切换窗口：</p>
-<p>ctrl b + p<br>或者<br>ctrl b + w 以开启本会话内的窗口选单，并从中选择切换</p>
-<pre><code>- 除了可以创建不同窗口外，还可以在同一个窗口内进行横向纵向切割，将其分成多个的 **窗格**：
-</code></pre>
-<p>使用快捷键 ctrl b + “ （一个双引号）将光标所在的窗口/窗格从中分为上下两个新窗格<br>使用快捷键 ctrl b + % （一个百分号）将光标所在的窗口/窗格从中分为左右两个新窗格</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ctrl b + p</span><br><span class="line">或者</span><br><span class="line">ctrl b + w 以开启本会话内的窗口选单，并从中选择切换</span><br></pre></td></tr></table></figure>
+<ul>
+<li>除了可以创建不同窗口外，还可以在同一个窗口内进行横向纵向切割，将其分成多个的 <strong>窗格</strong>：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">使用快捷键 ctrl b + &quot; （一个双引号）将光标所在的窗口/窗格从中分为上下两个新窗格</span><br><span class="line">使用快捷键 ctrl b + % （一个百分号）将光标所在的窗口/窗格从中分为左右两个新窗格</span><br></pre></td></tr></table></figure>
 <p>还可以使用以下命令以在不同窗格间切换：</p>
-<p>使用快捷键 ctrl b + o 切换至下一个窗格<br>使用快捷键 ctrl b + ; （一个分号） 切换至上一个窗格<br>使用快捷键 ctrl b + q 显示窗格编号，并快速选取对应数字以切换至窗格</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">使用快捷键 ctrl b + o 切换至下一个窗格</span><br><span class="line">使用快捷键 ctrl b + ; （一个分号） 切换至上一个窗格</span><br><span class="line">使用快捷键 ctrl b + q 显示窗格编号，并快速选取对应数字以切换至窗格</span><br></pre></td></tr></table></figure>
+
 <p>点此以返回<a href="/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">总览页面</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Vim-%E5%92%8C-Tmux/" data-id="ckrx455c00004jyvtd2usasmg" data-title="Vim 和 Tmux" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Vim-%E5%92%8C-Tmux/" data-id="ckrx4kvpn0004bivt460m1k5v" data-title="Vim 和 Tmux" class="article-share-link">Share</a>
       
       
       
