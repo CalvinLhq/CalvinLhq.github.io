@@ -164,14 +164,15 @@
 <li>第一种针对在行内出现的个别代码，我们使用反引号，键盘上 esc 下面的波浪号那个键，将代码围住 <code>这是代码</code>。</li>
 <li>另外一种就是单独的大型代码块，在代码块开头处和结尾处各使用三个反引号，将代码包围住：</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line">你可以将 Markdown 理解为一个标准，一个规则。它规定了用户以什么样的格式编写文本会得到怎样的效果。通常，以 Mardown 格式编写的文本会被冠以 `.md` 后缀。</span><br><span class="line">如果你阅览过一定数量的博客的话，会发现文章的格式会有一种既视感。好像都不无相似，而且都简洁直观：加粗的黑色标题，分层级列表，规范的代码块等等。当然，我的</span><br><span class="line">所有博客也都是用 Markdown 写的。</span><br><span class="line">下面，我将以一篇范例的形式来帮助你理解 Markdown 的编写方法。</span><br><span class="line"></span><br><span class="line"># 一、标题一</span><br><span class="line">在标题前加上一个井号键并空格</span><br><span class="line">## 标题二</span><br><span class="line">每多加一个井号，标题尺寸就缩小一点</span><br><span class="line">### 标题三</span><br><span class="line">以此类推</span><br><span class="line">#### 标题四</span><br><span class="line">还会变小</span><br><span class="line">##### 标题五</span><br><span class="line">到六个井号键为止</span><br><span class="line">###### 标题六</span><br><span class="line"></span><br><span class="line">## 二、分割线</span><br><span class="line">通常情况下标题二下方都会有一条分割线，想要添加分割线可以在单独的一行输入三个减号 --- 即可。</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">注意分割线要与不能与上一行文本相接，要空一行，不然就会这样，变成标题</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">## 三、列表嵌套</span><br><span class="line">- 第一层，文本之前加上一个 - 还有一个空格</span><br><span class="line">    - 第二层，文本之前按一下 tab 键，加上一个 - 还有一个空格</span><br><span class="line">        - 第三层，两个 tab 键，将上一个 - 还有一个空格</span><br><span class="line">			- 第四层，以此类推</span><br><span class="line">                - 五层极限</span><br><span class="line">                - 第五层，同级列表</span><br><span class="line">        - 第三层，统计列表</span><br><span class="line"></span><br><span class="line">1. 序号一，数字列表，文本之前加上数字和英文模式下的逗号 . 还有一个空格。</span><br><span class="line">    - 第二层</span><br><span class="line">2. 序号二</span><br><span class="line">    - 第二层</span><br><span class="line"></span><br><span class="line">## 四、换行</span><br><span class="line">这部分内容可能有点小麻烦，</span><br><span class="line">需要对代码块中的内容进行对照学习。</span><br><span class="line">如何进行换行呢？最开始的一句话其实在编写时于逗号处使用了一次 enter 键，按理来说应该是换行了呀？实际上使用markdown格式编写换行时需要先点两下空格（这后面&gt;有两个空格）</span><br><span class="line">再点 enter 键，于是就可以在下一行编写内容了。</span><br><span class="line"></span><br><span class="line">空行很简单，点两次 enter 空出一行就可以了。</span><br><span class="line"></span><br><span class="line">## 五、链接和图片</span><br><span class="line">图片和连接的引用方式很相似</span><br><span class="line">- 图片：`![图片描述文字](图片地址 &quot;图片名&quot;)`</span><br><span class="line">- 链接：`[描述名称](链接地址)`</span><br><span class="line"></span><br><span class="line">## 六、表格</span><br><span class="line"></span><br><span class="line">|一|二|三|</span><br><span class="line">|---|:--:|---:|</span><br><span class="line">|内容一|内容二|内容三|</span><br><span class="line">|四|五|六|</span><br><span class="line"></span><br><span class="line">- 一般情况下在第二行的分隔符 - 左边加 : 会使此列文字靠左，右边加 : 则靠右，两边都加则居中.</span><br><span class="line"></span><br><span class="line">## 七、代码块</span><br><span class="line">代码块可以将代码库框住，使其更直观显眼。框选方式分为两种：</span><br><span class="line">- 第一种针对在行内出现的个别代码，我们使用反引号，键盘上 esc 下面的波浪号那个键，将代码围住 `这是代码`。</span><br><span class="line">- 另外一种就是单独的大型代码块，在代码块开头处和结尾处各使用三个反引号，将代码包围住：</span><br><span class="line"></span><br><span class="line">&#x27;```&#x27;</span><br><span class="line">这里是代码</span><br><span class="line">&#x27;```&#x27;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">你可以将 Markdown 理解为一个标准，一个规则。它规定了用户以什么样的格式编写文本会得到怎样的效果。通常，以 Mardown 格式编写的文本会被冠以 `.md` 后缀。</span><br><span class="line">如果你阅览过一定数量的博客的话，会发现文章的格式会有一种既视感。好像都不无相似，而且都简洁直观：加粗的黑色标题，分层级列表，规范的代码块等等。当然，我的</span><br><span class="line">所有博客也都是用 Markdown 写的。</span><br><span class="line">下面，我将以一篇范例的形式来帮助你理解 Markdown 的编写方法。</span><br><span class="line"></span><br><span class="line"># 一、标题一</span><br><span class="line">在标题前加上一个井号键并空格</span><br><span class="line">## 标题二</span><br><span class="line">每多加一个井号，标题尺寸就缩小一点</span><br><span class="line">### 标题三</span><br><span class="line">以此类推</span><br><span class="line">#### 标题四</span><br><span class="line">还会变小</span><br><span class="line">##### 标题五</span><br><span class="line">到六个井号键为止</span><br><span class="line">###### 标题六</span><br><span class="line"></span><br><span class="line">## 二、分割线</span><br><span class="line">通常情况下标题二下方都会有一条分割线，想要添加分割线可以在单独的一行输入三个减号 --- 即可。</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">注意分割线要与不能与上一行文本相接，要空一行，不然就会这样，变成标题</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">## 三、列表嵌套</span><br><span class="line">- 第一层，文本之前加上一个 - 还有一个空格</span><br><span class="line">    - 第二层，文本之前按一下 tab 键，加上一个 - 还有一个空格</span><br><span class="line">        - 第三层，两个 tab 键，将上一个 - 还有一个空格</span><br><span class="line">			- 第四层，以此类推</span><br><span class="line">                - 五层极限</span><br><span class="line">                - 第五层，同级列表</span><br><span class="line">        - 第三层，统计列表</span><br><span class="line"></span><br><span class="line">1. 序号一，数字列表，文本之前加上数字和英文模式下的逗号 . 还有一个空格。</span><br><span class="line">    - 第二层</span><br><span class="line">2. 序号二</span><br><span class="line">    - 第二层</span><br><span class="line"></span><br><span class="line">## 四、换行</span><br><span class="line">这部分内容可能有点小麻烦，</span><br><span class="line">需要对代码块中的内容进行对照学习。</span><br><span class="line">如何进行换行呢？最开始的一句话其实在编写时于逗号处使用了一次 enter 键，按理来说应该是换行了呀？实际上使用markdown格式编写换行时需要先点两下空格（这后面&gt;有两个空格）</span><br><span class="line">再点 enter 键，于是就可以在下一行编写内容了。</span><br><span class="line"></span><br><span class="line">空行很简单，点两次 enter 空出一行就可以了。</span><br><span class="line"></span><br><span class="line">## 五、链接和图片</span><br><span class="line">图片和连接的引用方式很相似</span><br><span class="line">- 图片：`![图片描述文字](图片地址 &quot;图片名&quot;)`</span><br><span class="line">- 链接：`[描述名称](链接地址)`</span><br><span class="line"></span><br><span class="line">## 六、表格</span><br><span class="line"></span><br><span class="line">|一|二|三|</span><br><span class="line">|---|:--:|---:|</span><br><span class="line">|内容一|内容二|内容三|</span><br><span class="line">|四|五|六|</span><br><span class="line"></span><br><span class="line">- 一般情况下在第二行的分隔符 - 左边加 : 会使此列文字靠左，右边加 : 则靠右，两边都加则居中.</span><br><span class="line"></span><br><span class="line">## 七、代码块</span><br><span class="line">代码块可以将代码库框住，使其更直观显眼。框选方式分为两种：</span><br><span class="line">- 第一种针对在行内出现的个别代码，我们使用反引号，键盘上 esc 下面的波浪号那个键，将代码围住 `这是代码`。</span><br><span class="line">- 另外一种就是单独的大型代码块，在代码块开头处和结尾处各使用三个反引号，将代码包围住：</span><br><span class="line"></span><br><span class="line">&quot;```&quot;</span><br><span class="line">这里是代码，就是这个代码块里的代码，为了防止无限循环就不重新贴了:)。注意，我在三个反引号周围加了双引号为了避免转译，实际上是没有的。</span><br><span class="line">&quot;```&quot;</span><br></pre></td></tr></table></figure>
+
 
 <p>点此以返回<a href="/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">总览页面</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/04/Markdown/" data-id="ckrxd0b6n0003divtbfw83j8h" data-title="Markdown" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/04/Markdown/" data-id="ckrxd8dor0003ryvtc6gx1f3i" data-title="Markdown" class="article-share-link">Share</a>
       
       
       
@@ -210,7 +211,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Git-%E5%92%8C-Github/" data-id="ckrxd0b6l0002divt169gg0aa" data-title="Git 和 Github" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Git-%E5%92%8C-Github/" data-id="ckrxd8doq0002ryvtgk8jexi4" data-title="Git 和 Github" class="article-share-link">Share</a>
       
       
       
@@ -289,7 +290,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E7%94%A8-Hexo-%E5%86%99%E5%8D%9A%E5%AE%A2/" data-id="ckrxd0b6q0007divt9ti86b18" data-title="用 Hexo 写博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E7%94%A8-Hexo-%E5%86%99%E5%8D%9A%E5%AE%A2/" data-id="ckrxd8dou0007ryvt2v554t5b" data-title="用 Hexo 写博客" class="article-share-link">Share</a>
       
       
       
@@ -328,7 +329,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Docker-%E5%AE%B9%E5%99%A8/" data-id="ckrxd0b6j0001divtccd56t8o" data-title="Docker 容器" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Docker-%E5%AE%B9%E5%99%A8/" data-id="ckrxd8don0001ryvta4bf3zcr" data-title="Docker 容器" class="article-share-link">Share</a>
       
       
       
@@ -442,7 +443,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Vim-%E5%92%8C-Tmux/" data-id="ckrxd0b6n0004divtgrx58g1s" data-title="Vim 和 Tmux" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Vim-%E5%92%8C-Tmux/" data-id="ckrxd8dos0004ryvt5t1i3y1p" data-title="Vim 和 Tmux" class="article-share-link">Share</a>
       
       
       
@@ -481,7 +482,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E5%8C%96%E4%B8%8E-OpenStack/" data-id="ckrxd0b6q0008divtbhwubbmu" data-title="虚拟化与 OpenStack" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E5%8C%96%E4%B8%8E-OpenStack/" data-id="ckrxd8dov0008ryvt8ggfdct9" data-title="虚拟化与 OpenStack" class="article-share-link">Share</a>
       
       
       
@@ -520,7 +521,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" data-id="ckrxd0b6r0009divtht7mboxk" data-title="虚拟机与远程连接" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" data-id="ckrxd8dow0009ryvtc7p37t5a" data-title="虚拟机与远程连接" class="article-share-link">Share</a>
       
       
       
@@ -590,7 +591,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E5%AD%A6%E4%B9%A0-Linux-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" data-id="ckrxd0b6o0005divt6h3l2e6x" data-title="学习-Linux-基本操作" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E5%AD%A6%E4%B9%A0-Linux-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" data-id="ckrxd8dot0005ryvtbzxm0kni" data-title="学习-Linux-基本操作" class="article-share-link">Share</a>
       
       
       
@@ -688,7 +689,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="ckrxd0b6p0006divt5amt2nah" data-title="我的第一篇博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="ckrxd8dou0006ryvt937152rx" data-title="我的第一篇博客" class="article-share-link">Share</a>
       
       
       
