@@ -171,7 +171,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/04/Markdown/" data-id="ckrykoj4d0003rdvt44ed6et7" data-title="Markdown" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/04/Markdown/" data-id="ckryl7cye0003ozvthyy095v4" data-title="Markdown" class="article-share-link">Share</a>
       
       
       
@@ -210,7 +210,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Git-%E5%92%8C-Github/" data-id="ckrykoj4c0002rdvtfywve6fu" data-title="Git 和 Github" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Git-%E5%92%8C-Github/" data-id="ckryl7cyd0002ozvt4ugag5d6" data-title="Git 和 Github" class="article-share-link">Share</a>
       
       
       
@@ -289,7 +289,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E7%94%A8-Hexo-%E5%86%99%E5%8D%9A%E5%AE%A2/" data-id="ckrykoj4g0007rdvtby0q5mh4" data-title="用 Hexo 写博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E7%94%A8-Hexo-%E5%86%99%E5%8D%9A%E5%AE%A2/" data-id="ckryl7cyh0007ozvtc4p4dw6k" data-title="用 Hexo 写博客" class="article-share-link">Share</a>
       
       
       
@@ -328,7 +328,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Docker-%E5%AE%B9%E5%99%A8/" data-id="ckrykoj490001rdvtem7ngcsj" data-title="Docker 容器" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Docker-%E5%AE%B9%E5%99%A8/" data-id="ckryl7cya0001ozvtd86q2tmz" data-title="Docker 容器" class="article-share-link">Share</a>
       
       
       
@@ -442,7 +442,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Vim-%E5%92%8C-Tmux/" data-id="ckrykoj4e0004rdvt6dea987b" data-title="Vim 和 Tmux" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Vim-%E5%92%8C-Tmux/" data-id="ckryl7cyf0004ozvt3i736j8u" data-title="Vim 和 Tmux" class="article-share-link">Share</a>
       
       
       
@@ -481,7 +481,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E5%8C%96%E4%B8%8E-OpenStack/" data-id="ckrykoj4h0008rdvtei0v1nfx" data-title="虚拟化与 OpenStack" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E5%8C%96%E4%B8%8E-OpenStack/" data-id="ckryl7cyi0008ozvt40snd2zz" data-title="虚拟化与 OpenStack" class="article-share-link">Share</a>
       
       
       
@@ -524,7 +524,7 @@
 <ul>
 <li><p>我们通过 VMware 上的虚拟机进行上网，需要通过很多步骤：</p>
 <ul>
-<li>首先，虚拟机上的虚拟网卡与 VMware 的一个虚拟网卡进行通讯。在 Centos 7 虚拟机中，网卡名为 <code>ens33</code>，可以通过在终端中输入命令 <code>ifconfig</code> 来查看网络情况。这里可以看到我的 ip 地址为 <code>192.168.200.133</code>。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[root@Calvin-test CalvinLhq-hexo2]<span class="comment"># ifconfig</span></span><br><span class="line">ens33: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500</span><br><span class="line">        inet 192.168.200.133  netmask 255.255.255.0  broadcast 192.168.200.255</span><br><span class="line">        inet6 fe80::352c:1ff8:dfc1:72a3  prefixlen 64  scopeid 0x20&lt;link&gt;</span><br><span class="line">        ether 00:0c:29:b6:af:61  txqueuelen 1000  (Ethernet)</span><br><span class="line">        RX packets 107674  bytes 39083222 (37.2 MiB)</span><br><span class="line">        RX errors 0  dropped 0  overruns 0  frame 0</span><br><span class="line">        TX packets 73162  bytes 19702049 (18.7 MiB)</span><br><span class="line">        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0</span><br><span class="line">```  </span><br><span class="line">Vmware 的虚拟网卡名为 `vmnet8`，其地址可在 Windows 终端下输入 `ipconfig` 进行查看。注意，在 Linux 下命令为 `ifconfig`，在 Windows 下则为 `ipconfig`。  </span><br></pre></td></tr></table></figure>
+<li>首先，虚拟机上的虚拟网卡与 VMware 的一个虚拟网卡进行通讯。在 Centos 7 虚拟机中，网卡名为 <code>ens33</code>，可以通过在终端中输入命令 <code>ifconfig</code> 来查看网络情况。这里可以看到我的 ip 地址为 <code>192.168.200.133</code>。 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[root@Calvin-test CalvinLhq-hexo2]# ifconfig</span><br><span class="line">ens33: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500</span><br><span class="line">        inet 192.168.200.133  netmask 255.255.255.0  broadcast 192.168.200.255</span><br><span class="line">        inet6 fe80::352c:1ff8:dfc1:72a3  prefixlen 64  scopeid 0x20&lt;link&gt;</span><br><span class="line">        ether 00:0c:29:b6:af:61  txqueuelen 1000  (Ethernet)</span><br><span class="line">        RX packets 107674  bytes 39083222 (37.2 MiB)</span><br><span class="line">        RX errors 0  dropped 0  overruns 0  frame 0</span><br><span class="line">        TX packets 73162  bytes 19702049 (18.7 MiB)</span><br><span class="line">        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0</span><br><span class="line">```  </span><br><span class="line">Vmware 的虚拟网卡名为 `vmnet8`，其地址可在 Windows 终端下输入 `ipconfig` 进行查看。注意，在 Linux 下命令为 `ifconfig`，在 Windows 下则为 `ipconfig`。  </span><br></pre></td></tr></table></figure>
 以太网适配器 VMware Network Adapter VMnet8:</li>
 </ul>
 <p> 连接特定的 DNS 后缀 . . . . . . . :<br> 本地链接 IPv6 地址. . . . . . . . : fe80::b012:b3a4:6ca9:7766%7<br> IPv4 地址 . . . . . . . . . . . . : 192.168.200.1<br> 子网掩码  . . . . . . . . . . . . : 255.255.255.0<br> 默认网关. . . . . . . . . . . . . :</p>
@@ -535,13 +535,20 @@
 </li>
 </ul>
 <ol start="3">
-<li>点此以返回<a href="/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">总览页面</a></li>
+<li>远程连接</li>
 </ol>
+<ul>
+<li>虚拟机可以上网了，我们也就可以通过网络连接上他了。比较常用的一个，也是我使用的远程连接工具叫做 Xshell。接下来，我们会去安装他并在其中建立同虚拟机的远程连接：<ol>
+<li>下载安装不赘述了，通过 Xshell 官方网站下载最新版本就好了。要将他下载到你的 Windows 或者 Mac 系统中哦，不是下载到 Linux 上。</li>
+<li>下载完之后进入 Xshell 并在左上角选择 <code>新建</code> （一个右下角有绿色加号的小窗口), 在 <code>主机</code> 中输入虚拟机网卡地址，<code>名称</code> 中输入合适的名称并点击确认。<br><img src="/2021/08/04/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/xshell%E6%96%B0%E5%BB%BA%E4%BC%9A%E8%AF%9D.PNG" alt="创建会话"><br>点此以返回<a href="/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">总览页面</a></li>
+</ol>
+</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" data-id="ckrykoj4h0009rdvt8gcq312c" data-title="远程连接" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" data-id="ckryl7cyj0009ozvt2gbacgjm" data-title="远程连接" class="article-share-link">Share</a>
       
       
       
@@ -611,7 +618,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E5%AD%A6%E4%B9%A0-Linux-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" data-id="ckrykoj4f0005rdvt2u44f0ri" data-title="学习-Linux-基本操作" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E5%AD%A6%E4%B9%A0-Linux-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" data-id="ckryl7cyg0005ozvt1c5uhnjc" data-title="学习-Linux-基本操作" class="article-share-link">Share</a>
       
       
       
@@ -709,7 +716,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="ckrykoj4f0006rdvt5szdb64m" data-title="我的第一篇博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="ckryl7cyg0006ozvtbjal1rac" data-title="我的第一篇博客" class="article-share-link">Share</a>
       
       
       
