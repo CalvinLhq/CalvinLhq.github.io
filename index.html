@@ -165,13 +165,13 @@
 <li>另外一种就是单独的大型代码块，在代码块开头处和结尾处各使用三个反引号，将代码包围住。以下我将本片文章用代码块包住，使原本的格式展现出来，方便对照学习：</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">你可以将 Markdown 理解为一个标准，一个规则。它规定了用户以什么样的格式编写文本会得到怎样的效果。通常，以 Mardown 格式编写的文本会被冠以 `.md` 后缀。</span><br><span class="line">如果你阅览过一定数量的博客的话，会发现文章的格式会有一种既视感。好像都不无相似，而且都简洁直观：加粗的黑色标题，分层级列表，规范的代码块等等。当然，我的</span><br><span class="line">所有博客也都是用 Markdown 写的。</span><br><span class="line">下面，我将以一篇范例的形式来帮助你理解 Markdown 的编写方法。与文章后半代码块部分对照食用更加哦。</span><br><span class="line"></span><br><span class="line"># 一、标题一</span><br><span class="line">在标题前加上一个井号键并空格</span><br><span class="line">## 标题二</span><br><span class="line">每多加一个井号，标题尺寸就缩小一点</span><br><span class="line">### 标题三</span><br><span class="line">以此类推</span><br><span class="line">#### 标题四</span><br><span class="line">还会变小</span><br><span class="line">##### 标题五</span><br><span class="line">到六个井号键为止</span><br><span class="line">###### 标题六</span><br><span class="line"></span><br><span class="line">## 二、分割线</span><br><span class="line">通常情况下标题二下方都会有一条分割线，想要添加分割线可以在单独的一行输入三个减号 --- 即可。</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">注意分割线要与不能与上一行文本相接，要空一行，不然就会这样，变成标题</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">## 三、列表嵌套</span><br><span class="line">- 第一层，文本之前加上一个 - 还有一个空格</span><br><span class="line">    - 第二层，文本之前按一下 tab 键，加上一个 - 还有一个空格</span><br><span class="line">        - 第三层，两个 tab 键，将上一个 - 还有一个空格</span><br><span class="line">			- 第四层，以此类推</span><br><span class="line">                - 五层极限</span><br><span class="line">                - 第五层，同级列表</span><br><span class="line">        - 第三层，统计列表</span><br><span class="line"></span><br><span class="line">1. 序号一，数字列表，文本之前加上数字和英文模式下的逗号 . 还有一个空格。</span><br><span class="line">    - 第二层</span><br><span class="line">2. 序号二</span><br><span class="line">    - 第二层</span><br><span class="line"></span><br><span class="line">## 四、换行</span><br><span class="line">这部分内容可能有点小麻烦，</span><br><span class="line">需要对代码块中的内容进行对照学习。</span><br><span class="line">如何进行换行呢？最开始的一句话其实在编写时于逗号处使用了一次 enter 键，按理来说应该是换行了呀？实际上使用markdown格式编写换行时需要先点两下空格（这后面&gt;有两个空格）</span><br><span class="line">再点 enter 键，于是就可以在下一行编写内容了。</span><br><span class="line"></span><br><span class="line">空行很简单，点两次 enter 空出一行就可以了。</span><br><span class="line"></span><br><span class="line">## 五、链接和图片</span><br><span class="line">图片和连接的引用方式很相似</span><br><span class="line">- 图片：`![图片描述文字](图片地址 &quot;图片名&quot;)`</span><br><span class="line">- 链接：`[描述名称](链接地址)`</span><br><span class="line"></span><br><span class="line">## 六、表格</span><br><span class="line"></span><br><span class="line">|一|二|三|</span><br><span class="line">|---|:--:|---:|</span><br><span class="line">|内容一|内容二|内容三|</span><br><span class="line">|四|五|六|</span><br><span class="line"></span><br><span class="line">- 一般情况下在第二行的分隔符 - 左边加 : 会使此列文字靠左，右边加 : 则靠右，两边都加则居中.</span><br><span class="line"></span><br><span class="line">## 七、代码块</span><br><span class="line">代码块可以将代码库框住，使其更直观显眼。框选方式分为两种：</span><br><span class="line">- 第一种针对在行内出现的个别代码，我们使用反引号，键盘上 esc 下面的波浪号那个键，将代码围住 `这是代码`。</span><br><span class="line">- 另外一种就是单独的大型代码块，在代码块开头处和结尾处各使用三个反引号，将代码包围住。以下我将本片文章用代码块包住，使原本的格式展现出来，方便对照学习：</span><br><span class="line"></span><br><span class="line">&quot;```&quot;</span><br><span class="line">这里是代码，就是这个代码块里的代码，为了防止无限循环就不重新贴了:)。注意，我在三个反引号周围加了双引号为了避免转译，实际上是没有的。</span><br><span class="line">&quot;```&quot;</span><br></pre></td></tr></table></figure>
-<p><img src="/2021/08/04/Markdown/%E9%9A%8F%E6%84%8F%E6%88%AA%E5%9B%BE.PNG" alt="picture"></p>
+
 <p>点此以返回<a href="/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">总览页面</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/04/Markdown/" data-id="ckrybfudr0003q9vtcm9v8roe" data-title="Markdown" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/04/Markdown/" data-id="ckrykhtup0003dvvtdcdkg28t" data-title="Markdown" class="article-share-link">Share</a>
       
       
       
@@ -210,7 +210,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Git-%E5%92%8C-Github/" data-id="ckrybfudq0002q9vtdywmhqoa" data-title="Git 和 Github" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Git-%E5%92%8C-Github/" data-id="ckrykhtuo0002dvvtfocmahbz" data-title="Git 和 Github" class="article-share-link">Share</a>
       
       
       
@@ -289,7 +289,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E7%94%A8-Hexo-%E5%86%99%E5%8D%9A%E5%AE%A2/" data-id="ckrybfudu0007q9vtgkm2b3to" data-title="用 Hexo 写博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E7%94%A8-Hexo-%E5%86%99%E5%8D%9A%E5%AE%A2/" data-id="ckrykhtus0007dvvt0abmhxol" data-title="用 Hexo 写博客" class="article-share-link">Share</a>
       
       
       
@@ -328,7 +328,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Docker-%E5%AE%B9%E5%99%A8/" data-id="ckrybfudn0001q9vt1x3o3u28" data-title="Docker 容器" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Docker-%E5%AE%B9%E5%99%A8/" data-id="ckrykhtui0000dvvt5vzk6dnn" data-title="Docker 容器" class="article-share-link">Share</a>
       
       
       
@@ -442,7 +442,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/Vim-%E5%92%8C-Tmux/" data-id="ckrybfuds0004q9vta9d0d1vw" data-title="Vim 和 Tmux" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/Vim-%E5%92%8C-Tmux/" data-id="ckrykhtuq0004dvvt2b7e3mt5" data-title="Vim 和 Tmux" class="article-share-link">Share</a>
       
       
       
@@ -481,7 +481,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E5%8C%96%E4%B8%8E-OpenStack/" data-id="ckrybfudv0008q9vt3ov6c7f6" data-title="虚拟化与 OpenStack" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E8%99%9A%E6%8B%9F%E5%8C%96%E4%B8%8E-OpenStack/" data-id="ckrykhtut0008dvvt1cc58czn" data-title="虚拟化与 OpenStack" class="article-share-link">Share</a>
       
       
       
@@ -515,13 +515,33 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>人们想要舒适的环境中工作，提升工作效率，减少通勤时间，远程连接就显得必不可少。<br>为了熟悉远程连接的方法，我所有的 Linux 学习都是通过远程连接到虚拟机上进行的操作。远程连接必不可少的要了解网络基础。</p>
-<p>点此以返回<a href="/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">总览页面</a></p>
+        <p>人们想要舒适的环境中工作，提升工作效率，减少通勤时间，远程连接就显得必不可少。<br>为了熟悉远程连接的方法，我所有的 Linux 学习都是通过远程连接到虚拟机上进行的操作。<br>远程连接本身并不难实现，但要知其所以然，则需要对网络基础有所了解。总之，让我们一步一步开始配置网络和远程连接吧。</p>
+<hr>
+<p>以下所有操作均在 VMware Workstation 起的 Centos 7.6 虚拟机环境中完成，VMware 则安装在 Windows 10 系统下：</p>
+<ol>
+<li>了解上网流程  </li>
+</ol>
+<ul>
+<li><p>我们通过 VMware 上的虚拟机进行上网，需要通过很多步骤：</p>
+<ul>
+<li>首先，虚拟机上的虚拟网卡与 VMware 的一个虚拟网卡进行通讯。在 Centos 7 虚拟机中，网卡名为 <code>ens33</code>，可以通过在终端中输入命令 <code>ifconfig</code> 来查看网络情况。这里可以看到我的 ip 地址为 <code>192.168.200.133</code>。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[root@Calvin-test CalvinLhq-hexo2]<span class="comment"># ifconfig</span></span><br><span class="line">ens33: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500</span><br><span class="line">        inet 192.168.200.133  netmask 255.255.255.0  broadcast 192.168.200.255</span><br><span class="line">        inet6 fe80::352c:1ff8:dfc1:72a3  prefixlen 64  scopeid 0x20&lt;link&gt;</span><br><span class="line">        ether 00:0c:29:b6:af:61  txqueuelen 1000  (Ethernet)</span><br><span class="line">        RX packets 107674  bytes 39083222 (37.2 MiB)</span><br><span class="line">        RX errors 0  dropped 0  overruns 0  frame 0</span><br><span class="line">        TX packets 73162  bytes 19702049 (18.7 MiB)</span><br><span class="line">        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0</span><br><span class="line">```  </span><br><span class="line">Vmware 的虚拟网卡名为 `vmnet8`，其地址可在 Windows 终端下输入 `ipconfig` 进行查看。注意，在 Linux 下命令为 `ifconfig`，在 Windows 下则为 `ipconfig`。  </span><br></pre></td></tr></table></figure>
+以太网适配器 VMware Network Adapter VMnet8:</li>
+</ul>
+<p> 连接特定的 DNS 后缀 . . . . . . . :<br> 本地链接 IPv6 地址. . . . . . . . : fe80::b012:b3a4:6ca9:7766%7<br> IPv4 地址 . . . . . . . . . . . . : 192.168.200.1<br> 子网掩码  . . . . . . . . . . . . : 255.255.255.0<br> 默认网关. . . . . . . . . . . . . :</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">	- 然后，VMnet8 虚拟网卡需要与我们 Windows 系统主机上安装的网卡进行通讯。</span><br><span class="line">	- 最后，我们主机上的网卡在去寻找局域网内的网关，再由网关去连接外网。  </span><br><span class="line"></span><br><span class="line">- 我们要做的是，在同一台计算机上，使用远程连接的软件连接上虚拟机上的 `ens33` 网卡。还有，我们也需要确保虚拟机可以接通外网。</span><br><span class="line"></span><br><span class="line">2. 配置网络  </span><br><span class="line"> </span><br><span class="line">- 安装完虚拟机以后我们需要确认几件事情：</span><br><span class="line">	1. 确认虚拟机 `ens33` 网卡和 VMware 的 `VMnet8` 是否处于同网段，不同的话我们稍后修改。  </span><br><span class="line">	2. 确认网关地址：在 VMware Workstation 中左上角选择 `编辑`，然后选择 `虚拟网络编辑器` 便可开启网络编辑页面，点击 `net 设置` 便可看到 VMnet8 对应网关地址：  </span><br><span class="line">![VMware 虚拟网络配置](/2021/08/03/远程连接/vmware网络.PNG)  </span><br><span class="line"></span><br><span class="line">- 确认完后，我们需要对 `ens33` 网卡的配置文件进行修改：</span><br><span class="line">	1. 进入以下路径：`/etc/sysconfig/network-scripts/`</span><br><span class="line">	2. 找到并修改 `ifcfg-ens33` 网卡配置文件，重点修改项如下。如没有此项，添加至文件末尾即可：  </span><br></pre></td></tr></table></figure>
+<p>BOOTPROTO=”static”        #如果将 “static” 改为 “dhcp” 则会为本网卡动态分配 IP 地址，每次重启虚拟机都会导致 IP 改变，对远程连接不友好<br>IPADDR=192.168.200.133    #这里来设置静态的 IP 地址<br>NETMASK=255.255.255.255   #子网掩码<br>GATEWAY=192.168.200.2     #网关，输入VMnet8 对应网关<br>DNS1=192.168.200.2        #DNS服务器，这里我们填网关地址即可</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 配置完成后，我们需要重启网卡使其生效：</span><br><span class="line">	1. 使用 `service network restart` 命令重启网卡。</span><br><span class="line">	2. 之后使用 `ping` 命令测试网络有没有打通：  </span><br></pre></td></tr></table></figure>
+<p>ping 192.168.200.2  #看看可不可以联通网关，如果不行则需要去检查是不是处于同一网段。<br>ping <a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a>  #看看可不可以联通外网，如果可以那就万事大吉，一切准备就绪。<br>```</p>
+</li>
+</ul>
+<ol start="3">
+<li>点此以返回<a href="/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">总览页面</a></li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" data-id="ckrybfudw0009q9vtc2d2hfw5" data-title="远程连接" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" data-id="ckrykhtuu0009dvvt24hg3tew" data-title="远程连接" class="article-share-link">Share</a>
       
       
       
@@ -591,7 +611,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/03/%E5%AD%A6%E4%B9%A0-Linux-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" data-id="ckrybfudt0005q9vt81ji99m0" data-title="学习-Linux-基本操作" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/03/%E5%AD%A6%E4%B9%A0-Linux-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" data-id="ckrykhtur0005dvvt13234aj8" data-title="学习-Linux-基本操作" class="article-share-link">Share</a>
       
       
       
@@ -689,7 +709,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="ckrybfudt0006q9vt4q7y6qsb" data-title="我的第一篇博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="ckrykhtus0006dvvtgpo7be1w" data-title="我的第一篇博客" class="article-share-link">Share</a>
       
       
       
